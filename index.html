@@ -7,7 +7,7 @@
         }
         body {
             font-family: Arial, sans-serif;
-            background-color: white;
+            background-color: #f0f0f0;
             margin: 0;
             padding: 20px;
         }
@@ -15,11 +15,13 @@
             text-align: center;
             color: #333;
         }
+
         #skin-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
+
         .skin {
             margin: 10px;
             border: 1px solid #ccc;
@@ -27,13 +29,14 @@
             background-color: #fff;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            cursor: pointer;
+            cursor: pointer; /* Указатель на курсор для кликов */
             transition: transform 0.2s;
         }
 
         .skin:hover {
-            transform: scale(1.05);
+            transform: scale(1.05); /* Увеличение при наведении */
         }
+
         .skin img {
             width: 240px;
             height: 290px;
@@ -42,41 +45,49 @@
             max-width: 100%;
             border: 1px solid #ddd;
         }
+
+        /* Стили для модального окна */
         .modal {
-            display: none;
+            display: none; /* Скрыто по умолчанию */
             position: fixed;
             z-index: 1000;
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
-            overflow: hidden;
+            overflow: hidden; /* Предотвращение прокрутки */
             background-color: rgba(0,0,0,0.4);
             padding-top: 60px;
         }
+
         .modal-content {
             background-color: #fefefe;
-            margin: auto;
+            margin: auto; /* Центрируем по горизонтали */
             padding: 20px;
             border: 1px solid #888;
-            width: 75%;
-            max-height: 80%;
-            overflow-y: auto;
-            border-radius: 5px;
+            width: 75%; /* Ширина модального окна */
+            max-height: 80%; /* Максимальная высота окна */
+            overflow-y: auto; /* Включаем вертикальную прокрутку */
+            border-radius: 5px; /* Закругление углов */
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
             text-align: center;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 1000;
+            position: fixed; /* Фиксированное позиционирование */
+            top: 50%; /* Позиция сверху */
+            left: 50%; /* Позиция слева */
+            transform: translate(-50%, -50%); /* Сдвиг на половину ширины и высоты для центрирования */
+            z-index: 1000; /* Обеспечиваем, чтобы модальное окно было выше других элементов */
         }
+
+        /* Скрытие полосы прокрутки для WebKit-браузеров (Chrome, Safari) */
         .modal-content::-webkit-scrollbar {
-            display: none;
+            display: none; /* Скрыть полосу прокрутки */
         }
+
+        /* Скрытие полосы прокрутки для Firefox */
         .modal-content {
             scrollbar-width: none; /* Скрыть полосу прокрутки */
         }
+
         .modal-content img {
             width: 240px;
             height: 290px;
@@ -85,18 +96,29 @@
             max-width: 100%;
             border: 1px solid #ddd;
         }
+
+<!--        .modal-content img {-->
+<!--            width: 240px;-->
+<!--            height: 290px;-->
+<!--            max-height: 400px; /* Ограничение высоты изображения */-->
+<!--            object-fit: cover; /* Сохранение пропорций */-->
+<!--            border-radius: 5px;-->
+<!--        }-->
+
         .close {
             color: #aaa;
             float: right;
             font-size: 28px;
             font-weight: bold;
         }
+
         .close:hover,
         .close:focus {
             color: white;
             text-decoration: none;
             cursor: pointer;
         }
+        /* Кнопка прокрутки вверх */
         .scroll-to-top {
             position: fixed;
             bottom: 20px;
@@ -116,9 +138,11 @@
             transition: background-color 0.3s;
             z-index: 1000;
         }
+
         .scroll-to-top:hover {
             background-color: gray;
-            border: 2px solid red;
+            border: 2px solid red; /* Пример выделения скина */
+
         }
         #skin-id-input {
             width: 100%;
@@ -126,16 +150,16 @@
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            margin-right: 10px;
+            margin-right: 10px; /* Добавляем отступ справа */
             font-size: 16px;
             outline: none;
-            -moz-appearance: textfield;
+            -moz-appearance: textfield; /* Убираем стрелки в Firefox */
         }
 
         #skin-id-input::-webkit-inner-spin-button,
         #skin-id-input::-webkit-outer-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
+            -webkit-appearance: none; /* Убираем стрелки в Chrome */
+            margin: 0; /* Убираем отступ */
         }
 
         /* Стили для подсказок */
@@ -156,10 +180,10 @@
         }
 
         .suggestion-item:hover {
-            background-color: white;
+            background-color: #f0f0f0;
         }
         .highlight {
-            border: 2px solid orange;
+            border: 2px solid orange; /* Пример выделения скина */
             filter: drop-shadow(0 0 15px #555);
         }
     </style>
