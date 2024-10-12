@@ -4,24 +4,22 @@
     <meta charset="UTF-8">
     <title>Список скинов</title>
     <style>
+        }
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
             margin: 0;
             padding: 20px;
         }
-
         h1 {
             text-align: center;
             color: #333;
         }
-
         #skin-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
-
         .skin {
             margin: 10px;
             border: 1px solid #ccc;
@@ -29,14 +27,13 @@
             background-color: #fff;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            cursor: pointer; /* Указатель на курсор для кликов */
+            cursor: pointer;
             transition: transform 0.2s;
         }
 
         .skin:hover {
-            transform: scale(1.05); /* Увеличение при наведении */
+            transform: scale(1.05);
         }
-
         .skin img {
             width: 240px;
             height: 290px;
@@ -45,49 +42,41 @@
             max-width: 100%;
             border: 1px solid #ddd;
         }
-
-        /* Стили для модального окна */
         .modal {
-            display: none; /* Скрыто по умолчанию */
+            display: none;
             position: fixed;
             z-index: 1000;
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
-            overflow: hidden; /* Предотвращение прокрутки */
+            overflow: hidden;
             background-color: rgba(0,0,0,0.4);
             padding-top: 60px;
         }
-
         .modal-content {
             background-color: #fefefe;
-            margin: auto; /* Центрируем по горизонтали */
+            margin: auto;
             padding: 20px;
             border: 1px solid #888;
-            width: 75%; /* Ширина модального окна */
-            max-height: 80%; /* Максимальная высота окна */
-            overflow-y: auto; /* Включаем вертикальную прокрутку */
-            border-radius: 5px; /* Закругление углов */
+            width: 75%;
+            max-height: 80%;
+            overflow-y: auto;
+            border-radius: 5px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
             text-align: center;
-            position: fixed; /* Фиксированное позиционирование */
-            top: 50%; /* Позиция сверху */
-            left: 50%; /* Позиция слева */
-            transform: translate(-50%, -50%); /* Сдвиг на половину ширины и высоты для центрирования */
-            z-index: 1000; /* Обеспечиваем, чтобы модальное окно было выше других элементов */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
         }
-
-        /* Скрытие полосы прокрутки для WebKit-браузеров (Chrome, Safari) */
         .modal-content::-webkit-scrollbar {
-            display: none; /* Скрыть полосу прокрутки */
+            display: none;
         }
-
-        /* Скрытие полосы прокрутки для Firefox */
         .modal-content {
             scrollbar-width: none; /* Скрыть полосу прокрутки */
         }
-
         .modal-content img {
             width: 240px;
             height: 290px;
@@ -96,34 +85,95 @@
             max-width: 100%;
             border: 1px solid #ddd;
         }
-
-<!--        .modal-content img {-->
-<!--            width: 240px;-->
-<!--            height: 290px;-->
-<!--            max-height: 400px; /* Ограничение высоты изображения */-->
-<!--            object-fit: cover; /* Сохранение пропорций */-->
-<!--            border-radius: 5px;-->
-<!--        }-->
-
         .close {
             color: #aaa;
             float: right;
             font-size: 28px;
             font-weight: bold;
         }
-
         .close:hover,
         .close:focus {
             color: black;
             text-decoration: none;
             cursor: pointer;
         }
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: gray;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: background-color 0.3s;
+            z-index: 1000;
+        }
+        .scroll-to-top:hover {
+            background-color: gray;
+            border: 2px solid red;
+        }
+        #skin-id-input {
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 16px;
+            outline: none;
+            -moz-appearance: textfield;
+        }
+
+        #skin-id-input::-webkit-inner-spin-button,
+        #skin-id-input::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Стили для подсказок */
+        .suggestions {
+            border: 1px solid #ccc;
+            max-height: 150px;
+            overflow-y: auto;
+            position: absolute;
+            background: white;
+            z-index: 10;
+            width: calc(100% - 2px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .suggestion-item {
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        .suggestion-item:hover {
+            background-color: #f0f0f0;
+        }
+        .highlight {
+            border: 2px solid orange;
+            filter: drop-shadow(0 0 15px #555);
+        }
     </style>
 </head>
 <body>
     <h1>Список скинов</h1>
+    <!-- Поле поиска и кнопка -->
+    <div class="search-container">
+        <input type="number" id="skin-id-input" placeholder="Введите ID скина" autocomplete="off" />
+        <button id="find-skin-button">Найти</button>
+        <div id="suggestions" class="suggestions" style="display: flex;;"></div>
+    </div>
     <div id="skin-container"></div>
-
+    <div id="not-found-message" style="display: none; color: red;">Скин не найден, такого ID нету.</div>
     <!-- Модальное окно -->
     <div id="myModal" class="modal">
         <div class="modal-content">
@@ -135,67 +185,108 @@
             <span style="color: gray;">Увидеть полную информацию можно в кнопке бота "🔍 Поиск" - поиск скина по его ID или названию.</span>
         </div>
     </div>
-
+    <!-- Кнопка прокрутки вверх -->
+    <button class="scroll-to-top" onclick="scrollToTop()">
+        &#8679; <!-- Стрелка вверх -->
+    </button>
     <script>
-        // Функция загрузки данных
+        let skinData = [];
+        const skinContainer = document.getElementById('skin-container');
+        const notFoundMessage = document.getElementById('not-found-message');
         async function loadSkinData() {
             const response = await fetch('skin_data.json');
-            const skinData = await response.json();
-
-            const container = document.getElementById('skin-container');
-            skinData.forEach(skin => {
+            skinData = await response.json();
+            renderSkins(skinData);
+        }
+        function renderSkins(data) {
+            skinContainer.innerHTML = '';
+            data.forEach(skin => {
                 const skinDiv = document.createElement('div');
                 skinDiv.classList.add('skin');
-
-                // Обработка названия скина
-                const skinName = skin.name.includes('-') ? skin.name.split('-')[0].trim() : skin.name;
-
                 skinDiv.innerHTML = `
                     <img src="${skin.image_url}" alt="${skin.name}">
                     <h3 style="text-align: center;">ID: ${skin.id}</h3>
                 `;
-
-                // Добавление обработчика события для открытия модального окна
                 skinDiv.addEventListener('click', () => showModal(skin));
 
-                container.appendChild(skinDiv);
+                skinContainer.appendChild(skinDiv);
             });
         }
-
-        // Функция для отображения модального окна
         function showModal(skin) {
-            document.getElementById('modal-image').src = skin.image_url; // Установить изображение
+            document.getElementById('modal-image').src = skin.image_url;
             document.getElementById('modal-title').innerText = `ID: ${skin.id}`;
             document.getElementById('modal-title2').innerText = `Название: ${skin.name}`;
             document.getElementById('modal-details').innerText = `Название в донат-магазине: ${skin.name2}\n${skin.description || ''}`;
             const modal = document.getElementById('myModal');
             modal.style.display = "block";
-
-            // Запрет прокрутки страницы при открытии модального окна
             document.body.style.overflow = "hidden";
         }
-
-
-        // Закрытие модального окна
         const closeModal = () => {
             const modal = document.getElementById('myModal');
             modal.style.display = "none";
-            document.body.style.overflow = "auto"; // Восстановить прокрутку страницы
+            document.body.style.overflow = "auto";
         };
-
         document.getElementsByClassName("close")[0].onclick = closeModal;
-
-        // Закрытие модального окна при клике вне его
         window.onclick = function(event) {
             const modal = document.getElementById('myModal');
             if (event.target == modal) {
                 closeModal();
             }
         };
-
-        // Вызов функции загрузки данных
+        function updateSuggestions(value) {
+            const suggestions = document.getElementById('suggestions');
+            suggestions.innerHTML = '';
+            const filteredSkins = skinData.filter(skin =>
+                String(skin.id).startsWith(value)
+            );
+            if (filteredSkins.length > 0) {
+                suggestions.style.display = 'block';
+                filteredSkins.forEach(skin => {
+                    const suggestionItem = document.createElement('div');
+                    suggestionItem.classList.add('suggestion-item');
+                    suggestionItem.innerText = `${skin.id}`;
+                    suggestionItem.onclick = () => {
+                        document.getElementById('skin-id-input').value = skin.id;
+                        suggestions.style.display = 'none';
+                    };
+                    suggestions.appendChild(suggestionItem);
+                });
+            } else {
+                suggestions.style.display = 'none';
+            }
+        }
+        document.getElementById('skin-id-input').addEventListener('input', function() {
+            const value = this.value;
+            updateSuggestions(value);
+        });
+        document.getElementById('find-skin-button').onclick = () => {
+            const skinId = parseInt(document.getElementById('skin-id-input').value);
+            const skinToScroll = skinData.find(skin => skin.id === skinId);
+            notFoundMessage.style.display = 'none';
+            const highlightedSkins = document.querySelectorAll('.highlight');
+            highlightedSkins.forEach(skinDiv => {
+                skinDiv.classList.remove('highlight');
+            });
+            if (skinToScroll) {
+                const skinDivs = document.querySelectorAll('.skin');
+                skinDivs.forEach(skinDiv => {
+                    const skinDivIdText = skinDiv.innerText.trim();
+                    const skinDivId = parseInt(skinDivIdText.split(': ')[1]);
+                    if (skinDivId === skinId) {
+                        skinDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        skinDiv.classList.add('highlight');
+                    }
+                });
+                document.getElementById('skin-id-input').value = '';
+            } else {
+                notFoundMessage.style.display = 'block';
+            }
+            document.getElementById('suggestions').style.display = 'none';
+        };
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
         loadSkinData();
-
     </script>
 </body>
 </html>
