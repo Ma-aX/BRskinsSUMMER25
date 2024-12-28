@@ -1998,6 +1998,30 @@
         "image_url": "images/skin5370.png"
     },
     {
+        "id": 5882,
+        "name": "Ртуть",
+        "name2": "-",
+        "image_url": "images/skin5882.png"
+    },
+    {
+        "id": 5883,
+        "name": "Роберт",
+        "name2": "-",
+        "image_url": "images/skin5883.png"
+    },
+    {
+        "id": 5884,
+        "name": "Петр Шторм",
+        "name2": "-",
+        "image_url": "images/skin5884.png"
+    },
+    {
+        "id": 5885,
+        "name": "Искра",
+        "name2": "-",
+        "image_url": "images/skin5885.png"
+    },
+    {
         "id": 6774,
         "name": "-",
         "name2": "-",
@@ -2482,6 +2506,72 @@
         "name": "Громила",
         "name2": "-",
         "image_url": "images/skin6870.png"
+    },
+    {
+        "id": 6871,
+        "name": "-",
+        "name2": "МАСЛЕННИКОВ",
+        "image_url": "images/skin6871.png"
+    },
+    {
+        "id": 6872,
+        "name": "-",
+        "name2": "INSTASAMKA",
+        "image_url": "images/skin6872.png"
+    },
+    {
+        "id": 6873,
+        "name": "Флэшка",
+        "name2": "-",
+        "image_url": "images/skin6873.png"
+    },
+    {
+        "id": 6874,
+        "name": "Спектр",
+        "name2": "-",
+        "image_url": "images/skin6874.png"
+    },
+    {
+        "id": 6875,
+        "name": "Виктор",
+        "name2": "-",
+        "image_url": "images/skin6875.png"
+    },
+    {
+        "id": 6876,
+        "name": "Азартный",
+        "name2": "-",
+        "image_url": "images/skin6876.png"
+    },
+    {
+        "id": 6877,
+        "name": "Петр Тренер",
+        "name2": "-",
+        "image_url": "images/skin6877.png"
+    },
+    {
+        "id": 6878,
+        "name": "Кристина",
+        "name2": "-",
+        "image_url": "images/skin6878.png"
+    },
+    {
+        "id": 6879,
+        "name": "Анна",
+        "name2": "-",
+        "image_url": "images/skin6879.png"
+    },
+    {
+        "id": 6880,
+        "name": "Продюсер",
+        "name2": "-",
+        "image_url": "images/skin6880.png"
+    },
+    {
+        "id": 6881,
+        "name": "Молния Максим",
+        "name2": "-",
+        "image_url": "images/skin6881.png"
     },
     {
         "id": 6884,
