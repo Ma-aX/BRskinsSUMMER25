@@ -2082,6 +2082,24 @@
         "image_url": "images/skin5895.png"
     },
     {
+        "id": 5896,
+        "name": "Aarne",
+        "name2": "-",
+        "image_url": "images/skin5896.png"
+    },
+    {
+        "id": 5897,
+        "name": "Bushido Zho",
+        "name2": "-",
+        "image_url": "images/skin5897.png"
+    },
+    {
+        "id": 5898,
+        "name": "Танковый Ас",
+        "name2": "-",
+        "image_url": "images/skin5898.png"
+    },
+    {
         "id": 6774,
         "name": "-",
         "name2": "-",
@@ -2137,7 +2155,7 @@
     },
     {
         "id": 6783,
-        "name": "BLACK SANTA",
+        "name": "Black Santa",
         "name2": "-",
         "image_url": "images/skin6783.png"
     },
