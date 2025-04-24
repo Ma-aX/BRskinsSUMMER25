@@ -2100,6 +2100,36 @@
         "image_url": "images/skin5898.png"
     },
     {
+        "id": 5899,
+        "name": "Банкир",
+        "name2": "-",
+        "image_url": "images/skin5899.png"
+    },
+    {
+        "id": 5900,
+        "name": "Боря Бульдозер",
+        "name2": "-",
+        "image_url": "images/skin5900.png"
+    },
+    {
+        "id": 5901,
+        "name": "Майор Лгунов",
+        "name2": "-",
+        "image_url": "images/skin5901.png"
+    },
+    {
+        "id": 5902,
+        "name": "Следователь Ловцова",
+        "name2": "-",
+        "image_url": "images/skin5902.png"
+    },
+    {
+        "id": 5903,
+        "name": "Кастет",
+        "name2": "-",
+        "image_url": "images/skin5903.png"
+    },
+    {
         "id": 6774,
         "name": "-",
         "name2": "-",
@@ -2766,6 +2796,36 @@
         "image_url": "images/skin6902.png"
     },
     {
+        "id": 7770,
+        "name": "София",
+        "name2": "-",
+        "image_url": "images/skin7770.png"
+    },
+    {
+        "id": 7771,
+        "name": "Сокол",
+        "name2": "-",
+        "image_url": "images/skin7771.png"
+    },
+    {
+        "id": 7772,
+        "name": "Громов",
+        "name2": "-",
+        "image_url": "images/skin7772.png"
+    },
+    {
+        "id": 7773,
+        "name": "Дядя Жора",
+        "name2": "-",
+        "image_url": "images/skin7773.png"
+    },
+    {
+        "id": 7774,
+        "name": "Вульгарная Девушка",
+        "name2": "-",
+        "image_url": "images/skin7774.png"
+    },
+    {
         "id": 11588,
         "name": "-",
         "name2": "-",
@@ -2929,7 +2989,7 @@
     },
     {
         "id": 11943,
-        "name": "Администратор (Ж)",
+        "name": "Администратор (женский)",
         "name2": "-",
         "image_url": "images/skin11943.png"
     },
