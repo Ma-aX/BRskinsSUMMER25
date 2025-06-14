@@ -3658,5 +3658,59 @@
         "name": "-",
         "name2": "-",
         "image_url": "images/skin19902.png"
+    },
+    {
+        "id": 5500001,
+        "name": "Герой Родины",
+        "name2": "ГЕРОЙ Родины",
+        "image_url": "images/skin5500001.png"
+    },
+    {
+        "id": 5500002,
+        "name": "Даня",
+        "name2": "-",
+        "image_url": "images/skin5500002.png"
+    },
+    {
+        "id": 5500003,
+        "name": "Иван Береговой",
+        "name2": "-",
+        "image_url": "images/skin5500003.png"
+    },
+    {
+        "id": 5500004,
+        "name": "Дарина Серфер",
+        "name2": "-",
+        "image_url": "images/skin5500004.png"
+    },
+    {
+        "id": 5500005,
+        "name": "Кир Кирыч",
+        "name2": "-",
+        "image_url": "images/skin5500005.png"
+    },
+    {
+        "id": 5500006,
+        "name": "Яна Лагуна",
+        "name2": "-",
+        "image_url": "images/skin5500006.png"
+    },
+    {
+        "id": 5500007,
+        "name": "Варя",
+        "name2": "-",
+        "image_url": "images/skin5500007.png"
+    },
+    {
+        "id": 5500008,
+        "name": "Менеджер клуба",
+        "name2": "-",
+        "image_url": "images/skin5500008.png"
+    },
+    {
+        "id": 5500009,
+        "name": "Лера Кокетка",
+        "name2": "-",
+        "image_url": "images/skin5500009.png"
     }
 ]
