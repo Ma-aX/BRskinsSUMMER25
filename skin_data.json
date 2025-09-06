@@ -3712,5 +3712,125 @@
         "name": "Лера Кокетка",
         "name2": "-",
         "image_url": "images/skin5500009.png"
+    },
+    {
+        "id": 5500010,
+        "name": "Страж",
+        "name2": "-",
+        "image_url": "images/skin5500010.png"
+    },
+    {
+        "id": 5500011,
+        "name": "Адвокат",
+        "name2": "-",
+        "image_url": "images/skin5500011.png"
+    },
+    {
+        "id": 5500012,
+        "name": "Ямасаки",
+        "name2": "-",
+        "image_url": "images/skin5500012.png"
+    },
+    {
+        "id": 5500013,
+        "name": "Агент",
+        "name2": "-",
+        "image_url": "images/skin5500013.png"
+    },
+    {
+        "id": 5500014,
+        "name": "Шериф",
+        "name2": "-",
+        "image_url": "images/skin5500014.png"
+    },
+    {
+        "id": 5500015,
+        "name": "Начальница",
+        "name2": "-",
+        "image_url": "images/skin5500015.png"
+    },
+    {
+        "id": 5500016,
+        "name": "Ветеран",
+        "name2": "-",
+        "image_url": "images/skin5500016.png"
+    },
+    {
+        "id": 5500017,
+        "name": "Радистка",
+        "name2": "-",
+        "image_url": "images/skin5500017.png"
+    },
+    {
+        "id": 5500018,
+        "name": "Дон",
+        "name2": "-",
+        "image_url": "images/skin5500018.png"
+    },
+    {
+        "id": 5500019,
+        "name": "Инспектор",
+        "name2": "-",
+        "image_url": "images/skin5500019.png"
+    },
+    {
+        "id": 5500020,
+        "name": "Виктор Уличный ",
+        "name2": "-",
+        "image_url": "images/skin5500020.png"
+    },
+    {
+        "id": 5500021,
+        "name": "Нико Драйвовый",
+        "name2": "-",
+        "image_url": "images/skin5500021.png"
+    },
+    {
+        "id": 5500022,
+        "name": "Филин Детектив",
+        "name2": "-",
+        "image_url": "images/skin5500022.png"
+    },
+    {
+        "id": 5500023,
+        "name": "Сема Кореш",
+        "name2": "-",
+        "image_url": "images/skin5500023.png"
+    },
+    {
+        "id": 5500024,
+        "name": "Саня Сестра",
+        "name2": "-",
+        "image_url": "images/skin5500024.png"
+    },
+    {
+        "id": 5500025,
+        "name": "Шторм Похудевший",
+        "name2": "-",
+        "image_url": "images/skin5500025.png"
+    },
+    {
+        "id": 5500026,
+        "name": "Луна Гонщица",
+        "name2": "-",
+        "image_url": "images/skin5500026.png"
+    },
+    {
+        "id": 5500027,
+        "name": "Руслан Дрифтер",
+        "name2": "-",
+        "image_url": "images/skin5500027.png"
+    },
+    {
+        "id": 5500028,
+        "name": "Санек Брат",
+        "name2": "-",
+        "image_url": "images/skin5500028.png"
+    },
+    {
+        "id": 5500029,
+        "name": "Уличный Лихач",
+        "name2": "-",
+        "image_url": "images/skin5500029.png"
     }
 ]
